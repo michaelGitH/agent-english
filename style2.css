@@ -1,0 +1,519 @@
+@font-face{
+    font-family: OpenSansBold; /* Название загруженного шрифта. Это название будем указать в значение свойства font-family у желаемых элементов */
+    src: url("fonts/OpenSans/OpenSansBold/OpenSansBold.eot?#iefix") format("embedded-opentype"),
+    url("fonts/OpenSans/OpenSansBold/OpenSansBold.woff") format("woff"),
+    url("fonts/OpenSans/OpenSansBold/OpenSansBold.ttf") format("truetype");
+    font-family: OpenSansRegular; /* Название загруженного шрифта. Это название будем указать в значение свойства font-family у желаемых элементов */
+    src: url("fonts/OpenSans/OpenSansRegular/OpenSansRegular.eot?#iefix") format("embedded-opentype"),
+    url("fonts/OpenSans/OpenSansRegular/OpenSansRegular.woff") format("woff"),
+    url("fonts/OpenSans/OpenSansRegular/OpenSansRegular.ttf") format("truetype");
+}
+
+*{ margin:0;
+	padding:0; 
+}
+
+html, body{
+	font-family: OpenSansRegular;
+	margin:0;
+	padding:0; 
+	/*position: absolute;*/
+	height: 100%;
+	background: #2ecc71;
+}
+
+.header{
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	background: #1abc9c;
+	-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
+	height: 13%;
+	-webkit-align-items: flex-start;
+	    -ms-flex-align: start;
+	        align-items: flex-start;
+	align-items: center;
+}
+
+/*----------------------ВЕРХ---------------------------------*/
+
+.logo{
+ /* 19.65% 7.77777777777778%*/
+
+	text-decoration: none;
+	font-family: OpenSansBold;
+	color: #FFF; 
+	border: none;
+	-webkit-flex: 18 200px;
+	    -ms-flex: 18 200px;
+	        flex: 18 200px;
+	margin: 0% 0 0 4%;
+} .logo h1 {font-weight: normal; font-size: 2.0em;}
+
+.button_input_top_in, .button_input_top_reg {
+	text-decoration: none;
+	color: black;text-align: center;
+	background: white; border-radius: 2px;
+	font-size: 1.1em;
+	box-shadow: 2px 2px 10px -2px #000;
+	-webkit-flex: 1 140px;
+	    -ms-flex: 1 140px;
+	        flex: 1 140px;
+	margin: 0% 3% 0 0;
+	padding: .5% 0%;
+}
+.button_input_top_in{ margin-right: 1%;  }
+/* .button_input_top_in p, .button_input_top_reg p{margin-top: 4%;} */
+/* .button_input_top_reg { */
+	/* margin: 4% 1% 0 0; */
+/* } */
+.button_input_top_in:hover, .button_input_top_reg:hover {
+	background: #CAD0D2;
+}
+
+.section{ 
+	display: -webkit-flex; 
+	display: -ms-flexbox; 
+	display: flex; width: 100%; height: 75%;
+	/*flex-wrap: wrap;*/
+	-webkit-justify-content: space-around;
+	    -ms-flex-pack: distribute;
+	        justify-content: space-around; 
+	-webkit-align-items: flex-start; 
+	    -ms-flex-align: start; 
+	        align-items: flex-start;
+}
+
+.secret_agent_img{
+	height: 70%;  
+	margin: 3% auto auto 5%;
+}
+
+/*----------------------ФОРМА_РЕГИСТРАЦИИ---------------------------------*/
+
+.reg_form{
+	/* position: relative; */
+	/* border: solid 1px; */
+	/* background: #CACACA; */
+	/* z-index: 1; */
+	background: #bdc3c7;
+	border-radius: 2px;
+	margin: 3% 5% auto 5%;
+}
+
+.circle_form{
+	float: left;
+	background: #2ecc71; height:6.269%; width:9.999%;
+	border-radius: 50%; margin: 10% 0 0 45%;
+}
+
+.reg_form input, .reg_form  textarea{
+	list-style-type: none;
+	/* border: solid 2px; */
+	width: 71.393028%; height: 8.73070608%;
+	margin: 8% 0 0 13%;
+	border: none;
+	border-radius: 2px;
+	/*box-shadow: 2px 2px 10px -2px #000;*/
+	font-size: 0.8em;
+}
+.error{
+	color: red;
+	text-align: center;
+}
+
+#reg_form_username, #reg_form_pass{
+	 padding-left: 4%;
+}
+#reg_form_button{
+	background: #F1C40F;
+	color: white; width: 75.393028%;
+	font-size: 0.7em;
+}
+#reg_form_vk{
+	background: #2980B9;
+	color: white; width: 75.393028%;
+	font-size: 0.7em;
+}
+#reg_form_button:hover {
+	background: #DEB306;
+}
+#reg_form_vk:hover {
+	background: #0F70B0;
+}
+#message{
+	float: left; width: 80%;
+	margin: 9% 0 0 10%; color: red;
+	text-align: center;
+}
+.reg_battons{
+	float: left; width: 19.6%; height: 8.73%;
+	background: #95a5a6; margin: 0 0 0 7.6%;
+}
+.reg_battons:hover{background: #818989;}
+#facebook_button{ margin-left: 13%; }
+.reg_battons img{float: left; height: 60%; padding: 15% 0 0 30%;}
+#odnoklassniki_button img{padding-left: 35%; }
+#google_button img{ padding: 13% 0 0 20%; }
+
+.pregist{
+	 float: left; text-align: center; color: #34495e; font-size: 0.8em;
+	 width: 100%; margin: 11% 0 0 0;
+}
+#plicense{ color: #999; }
+
+.selection_message{
+	text-align: left; font-size: 1.5em;
+	margin: 3% 5% auto auto;
+	color: #FFF; 
+	width: 40%;
+	-webkit-flex: 2;
+	    -ms-flex: 2;
+	        flex: 2;
+}
+.selection_message h1, .selection_message h3{font-weight: normal; }	
+.selection_message h3{}
+/*----------------------ГЛАВНЫЙ_ФУТОР---------------------------------*/
+
+.footer{	
+	float: left;
+	height: 10%;
+	width: 100%;
+}
+
+.button_more{
+	float: left;
+	margin: 0% 0% 0 7%;
+	width: 10%;
+	text-decoration: none;
+	font-size: 120%;
+	font-weight: bold;
+	color: #838383;
+	text-align: center;
+}
+
+/*----------------PAGE_2-------------------------------*/
+
+.landing_header{
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	height: 90%;
+	width: 100%;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-align-items: flex-start;
+	    -ms-flex-align: start;
+	        align-items: flex-start;
+	-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
+}
+
+#secret_agent_img{
+	border:none;
+	margin: auto 5% auto auto;
+}
+#secret_agent_img img{
+	float: left;
+	height: 70%;
+	margin: 13% 0 0 0;
+}
+
+.text_block_1{
+	margin: auto auto auto 10%;
+	height: calc(78% - 1px);
+	width: 30%;
+	border: solid 1px grey;
+	color: grey;
+	text-align: center;
+}
+.text_block_1 h1{
+	margin-top: 40%;
+}
+#flag_1{
+	float: left; width: 80%;
+}
+#flag_2{
+	float: left; width: 80%;
+}
+.second_footer{
+	height: 10%; width: 100%;
+}
+.button_next{
+	float: left;
+	margin: 1% 0% 0 40%;
+	width: 10%;
+	text-decoration: none;
+	font-size: 120%;
+	font-weight: bold;
+	color: #838383;
+	text-align: center;
+}
+
+/*----------------PAGE_3-------------------------------*/
+.button_up{
+	-webkit-align-self: flex-end;
+	    -ms-flex-item-align: end;
+	        align-self: flex-end;
+	margin: auto 0 0 auto;
+}
+
+.third_content{
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	margin: auto 10% auto auto;
+	height: calc(78% - 1px);
+	-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
+	width: 30%;
+}
+
+.text_block_2{
+	/*float: left;*/
+	margin: 0;
+	/*margin: 7% 0% 0 20%;*/
+	border: solid 1px grey;
+	color: grey;
+	text-align: center;	
+	-webkit-flex: 1;	
+	    -ms-flex: 1;	
+	        flex: 1;
+	margin-bottom: 2%;
+}
+.text_block_2 h1{
+	margin-top: 20%;
+}
+.simple_form{
+	/*float: left;*/
+	-webkit-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
+	margin: 0;
+	border: solid 1px grey;
+	border-radius: 7px;
+	color: grey;
+	box-shadow: 2px 2px 10px -2px #000;
+	margin-top: 2%;
+}
+.simple_form li{
+	float: left;
+	list-style: none;
+	width: 100%;
+}
+.simple_form label{
+	float:left;
+	width: 30%;
+	margin: 5% 0 0 5%;
+	font-size: 1.3em;
+	text-align: right;
+	color: black;
+}
+
+
+.simple_form input{
+	float: left;
+	width: 45%;
+	margin: 5% 0 0 5%;
+	border-radius: 5px;
+	font-size: 1.1em;
+	padding: 2%;
+	box-shadow: 2px 2px 10px -2px #000;
+}
+#reg_s_form_button{
+	width: 50%;
+	margin-left: 40%;
+}
+
+#line { float: left; background: #666; height: 0.112%; width: 100%;}
+
+.footer_list{ float: left; display: inline-block; width: 70%; margin-top: 2%;}
+.footer_list li{float: left; list-style: none; padding: 0 0 0 7%;}
+
+/*--------------------------REGIST_FORM-----------------------------------------------------------*/
+.regist_form{
+	float: left;
+	margin: 3% 0 0 3%;
+	padding: 1%;
+	width: 40%;
+	border: 1px solid #000;
+}
+.regist_form label{
+	float: left;
+	margin: 1% 0 0 0;
+	width: 30%;
+	color: #353535;
+}
+.regist_form input{
+	float: left;
+	width: 65%;
+	margin: 1% 0 0 0;
+	padding: 1% 2%;
+}
+.regist_form input, .regist_form label, .regist_form{ border-radius: 2px; }
+#regist_submit{margin-left: 47.5%; width: 35%;}
+.regist_form input, .regist_form{ box-shadow: 2px 2px 10px -2px #000; }
+.red_star{color:red;}
+.error_span{
+	float: left;
+	width: 65%;
+	height: 15px;
+	margin: 0 0 0 41%;
+	color: red;
+}
+
+.redir{
+	float: left;
+	border: 1px solid;
+	border-radius: 2px;
+	box-shadow: 2px 2px 10px -2px #000;
+	text-align: center; padding: 1%; margin: 5% 0 0 2%;
+	background: #f39c12;
+	display: none;
+}
+.redir input { padding: 1.5%; background: white;}
+
+
+
+/*_______________________PERSONAL_ACCOUNT_______________________________________*/
+
+header{
+	float: left;
+	height: 12%; width: 100%;
+	background: #2ecc71;
+}
+header h1{ float: left; padding: 1.5% 0 0 1.5%;color: #FFF; font-weight: normal; font-size: 2em;}
+#secret_room{ float: right; margin-right: 3%;}
+
+.Leve_lk{
+	float: left; margin: 2% 0 0 5%;
+	text-decoration: none;
+	color: #FFF;
+	font-size: 1.2em;
+	font-weight: bold;
+	background: #2ecc71;
+	border: none;
+}
+
+/*_______________________PROGRESS_____________________*/
+#Progress{
+	float: right; width: 188px;
+	height: 22px; background: #FFF;
+	border-radius: 10px;
+	margin: 2% 3% 0 0;
+}
+#CircPro{
+	float: left; padding: 4.5%; 
+	position: relative;
+	top: -35%; left: -6%;
+	width: 19px; height: 19px;
+	border: 1px solid #999;
+	border-radius: 50%;
+	background: #FFF;
+	text-align: center; font-weight: bold;
+}
+#LevelPro{
+	float: left; height: 22px;
+	background: #f39c12; border-radius: 10px;
+}
+.inform_triangle{
+	width: 0;
+	height: 0;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-bottom: 16px solid #ecf0f1;
+	position: relative; left: 80%;
+}
+.inform_panel{
+	width:150%; height: 1500%;
+	position: relative;
+	top: 100%; left: -35%;
+	display: none;
+}
+.inform_rect{
+	width:100%; height: 95%;
+	position: relative;
+	background: #ecf0f1;
+	box-shadow: 6px 6px 15px -2px #999;
+	top:
+}
+.inform_rect h1{color: #000; font-size: 1.7em; padding: 0 35%;}
+.inform_rect ul{float: left; width: 40%; height: 40%; font-size: 1.3em; list-style: none;}
+.inform_rect li{ float: left; padding: 5% 0 0 12%; }
+.alt_img{ float: left; height: 33%; width: 30%; margin: 3% 0 0 5%; background: #ccc;}
+ .alt_img p{float: left; border-radius: 5px; margin: 45% 0 0 30%;}
+.inform_rect h2{float: left; font-weight: normal; margin: 0 0 0 13%;}
+/*________________________________________________________*/
+
+#img-bell{
+	float: right;
+	width: 56px; height: 59px; margin: .75% 3% 0 0%;
+}
+.lkCircle{
+	float: right; border-radius: 50%;
+	height: 60px; width: 60px; background: #FFF;
+	margin: .75% 3% 0 0%;
+}
+aside{
+	float: left; width: 12%;
+	height: 88%;
+}
+/*aside li{
+	padding: 7% 0 7% 12%;
+}*/
+aside li:hover {
+	background: #0D9E81;
+}
+aside ul{ float: left; height: 100%; }
+aside li{
+	list-style: none;
+	float: left;
+	width: 100%; height: 12%;
+	padding: 0  0 0 20%;
+	background: #1abc9c;
+	font-size: 1.4em;
+	color: #FFF;
+	border-color: #22D2AF;
+}
+aside li p{float:left; margin: 13% 0 0 0;}
+.p_lk_list{float:left; margin: 10% 0 0 0 !important;}
+.aims_lk_list{background: #bdc3c7; color: #000;}
+.aims_lk_list:hover{background: #bdc3c7;}
+.aims_lk_list p{margin: 0;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

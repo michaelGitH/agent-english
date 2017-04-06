@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<!-- <meta name="description" content="Для поисковика"/> -->
+<!-- <meta name="keywords" content="Ключевые слова для поисковика"  /> -->
+<!-- <meta name="author" content="Автор" /> -->
+<meta name="viewport" content="width=device-width"/>
+<link rel="stylesheet" href="style.css"  type='text/css'/>
+<script src="js/jquery-3.2.0.min.js"></script>
+<title>agent-english</title>
+</head>
+<body>
+	﻿	<a id='flag_0' name="first_page"></a> 
+	<div class='header'>
+	<a class='logo' href='index.php'></a>
+	<!-- <hr id="ll">
+	<hr id="rl"> -->
+	<form class="reg_form" action="#" name="form" method="post">
+		<label>
+			<input id = 'reg_form_name' width="30" type="text" name="name" value="" placeholder="     Имя">
+		</label>
+		<label>
+			<input id = 'reg_form_email' width="30" type="email" name="name" value="" placeholder="     e-mail">
+		</label>
+		<label><input id = 'reg_form_button' name='submit' type = 'submit' value='ЗАРЕГИСТРИРОВАТЬСЯ'></label>
+		<label><input id = 'reg_form_vk' name='vk' type = 'button' value='ВКОНТАКТЕ'></label>
+	</form>
+	<a class='button_input_top_in' href='#'><p>ВХОД</p></a>
+	<a class='button_input_top_reg' href='#'><p>РЕГИСТРАЦИЯ</p></a>
+</div>
+<div class='footer'>
+	<a class='button_more' onclick="slowScroll ('#flag_1')" href='#second_page' >
+		<img id='down_arrow' src='img/more(1440x900).png'>
+	</a>
+</div>
+
+<script>  
+    width=document.body.clientWidth; // ширина  
+    height=document.body.clientHeight; // высота  
+	/* alert(width + "x" + height); */
+	var mywidth = String(height * 1.6 * 0.2069444444444444);
+	var x = $(".reg_form");
+    $(".reg_form").css("width", function(){
+		return mywidth;
+	})
+</script>
+
+<!-- <a class='logo' href='index.php'><img src='#'></a> -->
+	<a id='flag_1' name='second_page'></a>
+	<div class='header'>
+	<div class='text_block_1'><h1>Text Text Text Text</h1></div>
+	<div class='text_block_1'><h1>Picture Picture Picture</h1></div>
+</div>
+<div class='footer'>
+	<a class='button_next' href='#third_page'>
+		<img id='down_arrow_2' onclick="slowScroll ('#flag_2')" src='img/next(1440x900).png'>
+	</a>
+</div>	<a id='flag_2' name="third_page"></a>
+	<div class='header'>
+	<div class='text_block_1'><h1>Picture Picture Picture</h1></div>
+	<div class='text_block_2'><h1>Text Text Text Text</h1></div>
+	<form class='simple_form' action='#' name='s_form' method='post'>
+		<label>
+			<input id = 'reg_s_form_name' width="19" type="text" name="name_s" value="" placeholder=" Имя">
+		</label>
+		<label>
+			<input id = 'reg_s_form_email' width="19" type="email" name="name_s" value="" placeholder=" e-mail">
+		</label>
+		<label><input id = 'reg_s_form_button' name='submit_s' type = 'submit' value=' Стать агентом'></label>
+	</form>
+</div>
+<div class='footer'>
+	<a class='button_next' onclick="slowScroll ('#flag_0')" href='#third_page'>
+		<img id='down_arrow_3' src='img/UP(1440x900).png'>
+	</a>
+</div><script>
+	function slowScroll(id){
+		var offset = 0;
+		$("html, body").animate({
+			scrollTop: $(id).offset().top
+		}, 500);
+		return false;
+	}
+</script>
+</body>
